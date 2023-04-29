@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { coinURL, coinData } from '../constants/constants'
 import axios from 'axios'
 
 const useGetCoinsList = () => {
-    const [coinList, setCryptoList] = useState([])
+    // const [coinList, setCryptoList] = useState([])
 
+    
     const getCoinsData = () => {
         const coinPromiseArr = []
         coinData.forEach(coin => {

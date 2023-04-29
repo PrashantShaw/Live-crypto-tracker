@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import useGetCoinsList from '../APIs/useGetCoinsList'
 
 const DropdownMenu = () => {
