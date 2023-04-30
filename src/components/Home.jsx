@@ -1,10 +1,13 @@
 import React from 'react'
-import DropdownMenu from './DropdownMenu'
+import Navbar from './Navbar'
+import Card from './Card'
 
 const Home = () => {
   return (
     <div className='container'>
-      <DropdownMenu />
+      <Navbar />
+      <Card />
+      
     </div>
   )
 }

@@ -1,0 +1,111 @@
+.dropdown-container {
+    position: absolute;
+    background-color: rgba(11, 8, 25, 0.8);
+    width: 100%;
+    height: 100vh;
+    animation: dropdownAnimation 200ms linear;
+}
+
+.dropdown {
+    position: relative;
+    box-sizing: border-box;
+    background: #1e1c2d;
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 16px;
+    
+}
+
+.border-wrapper {
+    padding: 1px;
+    border-radius: 18px;
+    width: 410px;
+    height: 461px;
+    margin: 220px auto 0;
+    background-image: linear-gradient(#3B79D4, #1e1c2d, #1e1c2d, #1e1c2d);
+}
+
+.cross-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    background: rgba(110, 86, 248, 0.15);
+    border-radius: 5px;
+    color: #DCDCEC;
+    cursor: pointer;
+}
+
+.coin-searchbar {
+    border: 1px solid rgba(110, 86, 248, 0.25);
+    border-radius: 30px;
+    width: 320px;
+    height: 40px;
+    display: flex;
+    gap: 13px;
+    padding-left: 14px;
+
+}
+
+.coin-searchbar>input {
+    border: none;
+    background-color: #1e1c2d;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D2D2D2;
+}
+
+.coin-searchbar>input:focus {
+    outline: none;
+}
+
+.search-icon {
+    height: 40px;
+    font-size: 20px;
+    line-height: 19px;
+    color: #D2D2D2;
+}
+
+.coins-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    overflow: auto;
+    height: 300px;
+}
+
+.coins-container::-webkit-scrollbar {
+    display: none;
+}
+
+.coin-row {
+    width: 318px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-left: 14px;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.coin-row:hover {
+    background: #272535;
+    border-radius: 2px;
+}
+
+.coin-row img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
