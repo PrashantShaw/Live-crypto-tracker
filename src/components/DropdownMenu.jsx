@@ -33,7 +33,7 @@ const DropdownMenu = ({ setShowDropdown, setCurrentCoin }) => {
                     key={idx + coin.symbol}
                     className="coin-row"
                   >
-                    <img src={`images/${coin.name.toLowerCase()}.webp`} />
+                    <img src={`images/${coin.name.toLowerCase()}.webp`} alt='crypto coin' />
                     <p>{coin.name}</p>
                   </div>)
               })}
