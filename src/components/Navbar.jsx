@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { GiHamburgerMenu } from 'react-icons/gi'
 import "../styles/nav.css"
 import { RxCross2 } from 'react-icons/rx'
 
@@ -12,10 +12,10 @@ const Navbar = () => {
       <img src="images/button.png" alt="button" className='button' />
     </nav>
     <nav className='hamberger-menu-wrapper'>
-      <span 
-        className='humberger-icon' 
-        onClick={()=>setShowMenu(true)}
-      >|||</span>
+      <GiHamburgerMenu
+        className='humberger-icon'
+        onClick={() => setShowMenu(true)}
+      />
       <img src="images/logo.png" alt='logo' className='logo' />
       <div className={`hamberger-menu ${showMenu ? 'active' : ''}`}>
         <p className='selected-tab'>Trade</p>
@@ -25,7 +25,7 @@ const Navbar = () => {
         <img src="images/button.png" alt="button" className='button ham-btn' />
       </div>
       {/* <RxCross2 className='cross-icon menu' onClick={() => { }} /> */}
-      <RxCross2 className={`cross-icon menu ${showMenu ? 'show' : ''}`} onClick={() => { setShowMenu(false)}} />
+      <RxCross2 className={`cross-icon menu ${showMenu ? 'show' : ''}`} onClick={() => { setShowMenu(false) }} />
     </nav>
   </>
 }
