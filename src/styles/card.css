@@ -23,11 +23,15 @@
     height: 567px;
     background-color: #0B0819;
     border-radius: 20px;
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    gap: 79px; */
     margin-top: 100px;
+    /* border: 2px solid red; */
     /* border: 2px solid violet; */
+    padding: 0 40px;
 }
 
 .icon {
@@ -89,12 +93,21 @@
 }
 
 .content {
-    position: absolute;
+    /* border: 2px solid red; */
+    /* position: absolute; */
     width: 100%;
+    margin-top: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .val {
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -104,7 +117,7 @@
     font-size: 14px;
     line-height: 21px;
     color: #C5C5C5;
-    margin: 79px 0 25px 44px;
+    /* margin: 79px 0 25px 44px; */
 }
 
 .value {
@@ -113,7 +126,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    margin: 71px 40px 18px 0;
+    /* margin: 71px 40px 18px 0; */
     display: flex;
     align-items: center;
     gap: 7px;
@@ -126,22 +139,25 @@
 
 .div {
     cursor: pointer;
-    /* width: 390px; */
+    width: 100%;
     height: 60px;
     background-color: #1C1731;
     border-radius: 10px;
     /* box-shadow: #f0f0f0 0px 1px 4px; */
     display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    padding: 0 25px;
+    gap: 9px;
 }
 
 .iconSm {
     width: 25px;
     height: 25px;
     border-radius: 150px;
-    margin: 18px 0 17px 25px;
+    /* margin: 18px 0 17px 25px; */
     background-color: #0B0819;
 }
 
@@ -154,29 +170,31 @@
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    margin: 18px 0 17px -200px;
+    /* margin: 18px 0 17px -200px; */
 }
 
 .div .drop {
     width: 14px;
     height: 7px;
-    margin: 27px 26px 27px 0;
+    margin-left: auto;
 }
 
 .input-control {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .input-control .lab1 {
     /* width: 187px; */
+    margin-bottom: 12px;
     height: 21px;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #DCDCEC;
-    margin: 24px 0 12px 44px;
+    /* margin: 24px 0 12px 44px; */
 }
 
 .input-control .flex {
@@ -186,7 +204,7 @@
 }
 
 .input-control input {
-    max-width: 390px;
+    /* max-width: 390px; */
     width: 100%;
     height: 60px;
     font-family: 'Poppins';
@@ -194,7 +212,7 @@
     font-size: 22px;
     line-height: 142%;
     color: #6F6F7E;
-    margin: 0 40px 0 40px;
+    /* margin: 0 40px 0 40px; */
     padding: 24px;
 }
 
@@ -207,7 +225,7 @@
 .inr {
     position: absolute;
     top: 18px;
-    right: 64px;
+    right: 7%;
     position: absolute;
     width: 25px;
     height: 24px;
@@ -219,8 +237,9 @@
 }
 
 .input-control .lab2 {
-    margin: 24px 0 12px 44px;
-    max-width: 351px;
+    margin-bottom: 12px;
+    /* margin: 24px 0 12px 44px; */
+    max-width: 300px;
     width: 100%;
     height: 21px;
     font-family: 'Poppins';
@@ -234,6 +253,7 @@
     background: #1C1731;
     border-radius: 10px;
     border: none;
+    /* width: 100%; */
 }
 
 .input-control input:focus {
@@ -252,10 +272,11 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
-    margin: 50px 40px 48px 40px;
+    /* margin: 50px 40px 48px 40px; */
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
+    margin-top: 26px;
 }

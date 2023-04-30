@@ -11,26 +11,108 @@
     height: 69px;
     background-color: #0B0819;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 0 0 44px;
 }
 
 .logo {
     width: 120px;
     height: 44px;
     cursor: pointer;
-    margin: 12px 0 13px 44px;
+    /* margin: 12px 0 13px 44px; */
 }
 
 .middle {
     width: 356px;
     height: 42px;
     cursor: pointer;
-    margin: 27px 0 18px 0;
+    /* margin: 27px 0 18px 0; */
+    margin-top: 30px;
 }
 
 .button {
     width: 140px;
     height: 40px;
     cursor: pointer;
-    margin: 14px 120px 15px 0;
+    margin-right: 8%;
+    /* margin: 14px 120px 15px 0; */
+}
+
+.hamberger-menu-wrapper {
+    display: none;
+}
+
+.humberger-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.hamberger-menu {
+    width: 300px;
+    height: 100vh;
+    background-color: #1C1731;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 150px 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+.hamberger-menu.active{
+    top: 0;
+    left: 0;
+    transition: 350ms;
+}
+.hamberger-menu>p {
+    color: #5A5A5A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.hamberger-menu .selected-tab{
+    color: #627EEA;
+}
+
+.button.ham-btn{
+    /* margin-top: auto; */
+    position: absolute;
+    bottom: 50px;
+}
+.cross-icon.menu{
+    top: 25px;
+    left: -150px;
+    transition: 850ms;
+}
+.cross-icon.menu.show{
+    top: 25px;
+    left: 250px;
+    transition: 350ms;
+}
+
+@media (max-width: 768px) {
+    .hamberger-menu-wrapper {
+        position: fixed;
+        inset: 0;
+        height: 69px;
+        width: 100%;
+        background-color: #0B0819;
+        display: flex;
+        align-items: center;
+        padding-left: 25px;
+        gap: 25px;
+        z-index: 999;
+    }
+    .nav{
+        display: none;
+    }
+    
 }
